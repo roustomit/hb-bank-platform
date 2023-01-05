@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB Commercial Bank</title>
+    <link rel="shortcut icon" href="Image/fav.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Login area start-->
+    <div id="login-area">
+        <h1 class="text-center">Welcome To HB Commercial Bank</h1>
+        <div class="submit-area">
+            <h4>Login</h4>
+            <input type="text" placeholder="Enter your email" class="form-control">
+            <br>
+            <input type="password" placeholder="Enter your Password" class="form-control">
+            <br>
+            <button id="submit" class="btn btn-success"> submit</button>
+        </div>
+    </div>
+    <!--Transaction Area start-->
+    <div id="transaction-area">
+        <h2 class="text-center">Please Check Your Net Balance</h2>
+        <div class="row">
+            <div class="col-md-4 mt-5">
+                <!--new div for style magin-->
+                <div class="deposit box-style">
+                    <h4>Deposit</h4>
+                    <h2>$ <span id="currentDeposit">00</span></h2>
+                    <!--span tag er moddhe value akhte hobe,tasara nan asbe-->
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="withdrow box-style">
+                    <h4>Withdrow</h4>
+                    <h2>$ <span id="currentWithdrow">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="balance box-style">
+                    <h4>Balance</h4>
+                    <h2>$ <span id="currentBalance">400</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <!--new div for style magin-->
+                <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <input type="text" id="depositAmount" class="form-control" placeholder="$ deposit your amount">
+                    <br>
+                    <button id="addDeposit" class="btn btn-warning">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Withdrow</h4>
+                    <input type="text" id="withdrowAmount" class="form-control" placeholder="$ withdrow your amount">
+                    <br>
+                    <button id="addWithdrow" class="btn btn-warning">Withdrow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
